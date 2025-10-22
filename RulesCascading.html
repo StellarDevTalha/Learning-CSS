@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- External style (lowest priority) -->
+  <title>CSS Cascading & Inheritance Practice</title>
+
+  <link rel="stylesheet" href="RulesCascading.css">
+
+   <!-- Internal style -->
+  <style>
+    p{
+        color: green;
+        font-size: 18px;
+    }
+
+    .special{
+        color: blue;
+    }
+
+    #unique{
+        color: red !important;
+    }
+
+    div{
+        font-family: arial;
+        border: 2px solid black;
+    }
+  </style>
+
+</head>
+
+<body>
+    <!-- <h1>Cascading order (inline > internal > external)</h1>
+    <h1>Specificity</h1>
+    <h1>Inheritance</h1>
+    <h1>!important</h1> -->
+
+      <div>
+
+        <!-- Inline Style -->
+        <h2 style="color: orange;">Cascading and Inheritance Example</h2>
+        <p>This paragarph inherits font-family from div.</p>
+        <p class="special"> this one uses a class - color: blue.</p>
+        <p id="unique">This one uses an ID and !important - color: red.</p>
+      </div>
+    
+</body>
+</html>
